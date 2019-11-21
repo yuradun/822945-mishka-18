@@ -5,8 +5,141 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+  	<header class="page-header">
+  		<a class="page-header__logo"><img src="" class="page-header__logo-image" width="86" height="35" alt="Логотип Мишка">
+  		</a>	
+  		
+	  	<nav class="main-nav">
+	  		<button type="button" class="main-nav__toggle">Меню</button>
+	  		<div class="main-nav__wrapper">
+		  		<ul class="main-nav__list page-list">
+		  			<li class="page-list__list-item">
+		  				<a href="#">Пункт 1</a>
+		  			</li>
+		  			<li class="page-list__list-item">
+		  				<a href="#">Пункт 2</a>
+		  			</li>
+		  			<li class="page-list__list-item">
+		  				<a href="#">Пункт 3</a>
+		  			</li>
+		  			<li class="page-list__list-item">
+		  				<a href="#">Пункт 4</a>
+		  			</li>
+		  		</ul>
+		  	</div>
+	  	</nav>
+	</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+	<main class="page-main">
+		<h1 class="visually-hidden">Милые штуки - каждому в дом!</h1>
+		<section class="cute">
+			<h2>Милые штуки ручной работы для дома</h2>
+				<div class="type-thing">
+					<ul class="type-thing__list cute-list">
+						<li class="cute-list__item cute-lamp">
+							<a href="#">Предметы интерьера</a>
+						</li>
+						<li class="cute-list__item cute-detail">
+							<a href="#">Детские игрушки</a>
+						</li>
+					</ul>
+				</div>
+		</section>
+
+		<section class="top-gods">
+			<h2>Вязаные корзинки</h2>
+			<b>Товар недели</b>
+			<p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+
+			<table class="stats-table">
+				<tr class="stats-table__line">
+					<td class="stats-table__column color">Цвет:</td>
+					<td class="stats-table__column color-description">«Тиффани»/серый</td>
+				</tr>
+				<tr class="stats-table__line">
+					<td class="stats-table__column diameter">Диаметр:</td>
+					<td class="stats-table__column diameter-description">25 см</td>
+				</tr>
+				<tr class="stats-table__line">
+					<td class="stats-table__column height">Высота:</td>
+					<td class="stats-table__column height-description">25 см</td>
+				</tr>
+			</table>
+
+			<section class="advantages">
+				<h2>Коротко о нас:</h2>
+				<ul class="advantages__list about-us-list">
+					<li class="advantages__item advantages__item--eco">
+						Экологически чистые материалы
+					</li>
+					<li class="advantages__item advantages__item--style">
+						Скандинавский стиль по российской цене
+					</li>
+					<li class="advantages__item advantages__item--like">
+						Увеличивает лайки на фотографиях
+					</li>
+					<li class="advantages__item advantages__item--love">
+						Связано вручную с любовью и умилением
+					</li>
+					<li class="advantages__item advantages__item--support">
+						Поддержка отечественного производителя
+					</li>
+					<li class="advantages__item advantages__item--surprise">
+						Поставляется в подарочной упаковке
+					</li>
+				</ul>
+			</section>
+
+			<section class="reviews">
+				<div class="reviews-table">
+					<p class="reviews-table__title">
+						Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+					</p>
+
+					<cite class="reviews-table__cite">
+						Анастасия Красильникова<br>
+						@misssssiskras
+					</cite>
+				</div>
+				<div class="button-slider">
+					<button class="button-slider__button button-slider__button--left" type="button"></button>
+					<button class="button-slider__button button-slider__button--right" type="button"></button>
+				</div>
+				<button type="button">Написать</button>
+			</section>
+	</main>
+
+    <footer class="page-footer">
+    	<section class="contacts">
+    		<table class="contacts-table">
+				<tr class="contacts-table__line">
+					<td class="contacts-table__column color">e-mail:</td>
+					<td class="contacts-table__column color-description">info@mimimishkashop.ru
+					</td>
+				</tr>
+				<tr class="contacts-table__line">
+					<td class="contacts-table__column diameter">адрес:</td>
+					<td class="contacts-table__column diameter-description">г. Санкт-Петербург,
+					ул. Большая Конюшенная, 
+					д. 19/8, офис 101
+					</td>
+				</tr>
+			</table>
+			<div class="map">
+				<img class="map__marker" src="" width="67" height="100" alt="Маркер на карте">
+			</div>
+			<button class="" type="button">Напишите нам</button>
+    	</section>
+
+    	<section class="social-network">
+    		<ul class="social-network__list network-list">
+    			<li class="network-list__item--instagram">Инста</li>
+    			<li class="network-list__item--facebook">Фейс</li>
+    			<li class="network-list__item--twitter">Твит</li>
+    		</ul>
+    	</section>
+    	<b class="copy-right">Разработанно</b>
+    </footer>
 
   </body>
 </html>
