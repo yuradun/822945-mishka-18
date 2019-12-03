@@ -9,23 +9,23 @@
 <body>
 <header class="page-header">
   <a class="page-header__logo">
-    <img src="#" class="page-header__logo-image" width="86" height="35" alt="Логотип Мишка">
+    <img src="index.html" class="page-header__logo-image" width="86" height="35" alt="Логотип Мишка">
   </a>
 
   <nav class="main-nav">
     <button type="button" class="main-nav__toggle">Меню</button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list page-list">
-        <li class="page-list__list-item">
+        <li class="page-li__li-item">
           <a href="#">Пункт 1</a>
         </li>
-        <li class="page-list__list-item">
+        <li class="page-li__li-item">
           <a href="#">Пункт 2</a>
         </li>
-        <li class="page-list__list-item">
+        <li class="page-li__li-item">
           <a href="#">Пункт 3</a>
         </li>
-        <li class="page-list__list-item">
+        <li class="page-li__li-item">
           <a href="#">Пункт 4</a>
         </li>
       </ul>
@@ -35,46 +35,36 @@
 <main class="main-catalog">
   <h1>Каталог товаров</h1>
 
-  <div class="main-gods">
-    <ul class="main-gods__gods-catalog page-catalog">
-      <li class="page-catalog__catalog-item--rabbit">
-        <h3>Зайчик-попрыгайчик</h3>
-        <p>Рост 30 см, вес 200 г</p>
-        <div class="catalog-item__price">
-          <p>1200 руб.</p>
-        </div>
-      </li>
-      <li class="page-catalog__catalog-item--basket">
-        <h3>Корзинка для белья</h3>
-        <p>Диаметр 15 см, высота 10см</p>
-        <div class="catalog-item__price">
-          <p>690 руб.</p>
-        </div>
-      </li>
-      <li class="page-catalog__catalog-item--big-basket">
-        <h3>Большая корзинка для игрушек</h3>
-        <p>Диаметр 30 см, высота 30 см</p>
-        <div class="catalog-item__price">
-          <p>1200 руб.</p>
-        </div>
-      </li>
-      <li class="page-catalog__catalog-item--make-order">
-        <h3>Процесс производства</h3>
-        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button type="button" class="catalog-item--make-order__button">Сделать заказ</button>
-      </li>
-    </ul>
+  <ul class="gods">
+    <li class="gods-item">
+      <h3>Зайчик-попрыгайчик</h3>
+      <p>Рост 30 см, вес 200 г</p>
+      <p class="gods__price">1200 руб.</p>
+    </li>
+    <li class="gods-item">
+      <h3>Корзинка для белья</h3>
+      <p>Диаметр 15 см, высота 10см</p>
+      <p class="gods__price">690 руб.</p>
+    </li>
+    <li class="gods-item">
+      <h3>Большая корзинка для игрушек</h3>
+      <p>Диаметр 30 см, высота 30 см</p>
+      <p class="gods__price">1200 руб.</p>
+    </li>
+  </ul>
+  <div class="video-block">
+    <h3>Процесс производства</h3>
+    <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    <button type="button" class="video-block__order-button">Сделать заказ</button>
   </div>
 </main>
 <footer class="page-footer">
-  <section class="social-network">
-    <ul class="social-network__list network-list">
-      <li class="network-list__item--instagram">Инста</li>
-      <li class="network-list__item--facebook">Фейс</li>
-      <li class="network-list__item--twitter">Твит</li>
-    </ul>
-  </section>
-  <b class="copy-right">Разработанно</b>
+  <ul class="social-network__li network-li">
+    <li class="network-li__item--instagram"><a href="#">Инста</a></li>
+    <li class="network-li__item--facebook"><a href="#">Фейс</a></li>
+    <li class="network-li__item--twitter"><a href="#">Твит</a></li>
+  </ul>
+  <b class="copy-right"><a href="https://htmlacademy.ru">Твит</a>Разработанно</a></b>
 </footer>
 </body>
 
