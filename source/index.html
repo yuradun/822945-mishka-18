@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
 </head>
+
 <body>
 <header class="page-header">
   <a class="page-header__logo">
@@ -34,7 +34,7 @@
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Милые штуки - каждому в дом!</h1>
-    <span class="main-inscription">
+    <span class="page-main__inscription">
       <h2>Милые штуки ручной работы для дома</h2>
     </span>
     <div class="sort-navigation">
@@ -48,51 +48,82 @@
       </ul>
     </div>
 
-    <section class="gods-week">
-      <h2 class="gods-week__heading">Вязаные корзинки</h2>
-      <b class="gods-week__additionally">Товар недели</b>
-      <p class="gods-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-      <ul class="gods-week__list">
-        <li class="gods-week__list__item list-left">
-          Цвет:
-        </li>
-        <li class="gods-week__list__item list-right">
-          «Тиффани»/серый
-        </li>
-      </ul>
-      <ul class="gods-week__list">
-        <li class="gods-week__list__item list-left">
-          Диаметр:
-        </li>
-        <li class="gods-week__list__item list-right">
-          25см
-        </li>
-      </ul>
-      <ul class="gods-week__list">
-        <li class="gods-week__list__item list-left">
-          Высота:
-        </li>
-        <li class="gods-week__list__item list-right">
-          15см
-        </li>
-      </ul>
-      <img src="/img/triple-set-mobile.png" alt="Вязаная корзинка" width="260" height="315">
-      <p class="gods-week__price">Цена: 990 руб.</p>
-      <button type="button" class="gods-week__button">Заказать</button>
-    </section>
+  <section class="gods-week">
+    <h2 class="gods-week__heading">Вязаные корзинки</h2>
+    <b class="gods-week__additionally">Товар недели</b>
+    <p class="gods-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+    <table class="stats-table">
+      <tr class="stats-table__row">
+        <td class="stats-table__column">Цвет:</td>
+        <td class="stats-table__column">«Тиффани»/серый</td>
+      </tr>
+      <tr class="stats-table__row">
+        <td class="stats-table__column">Диаметр:</td>
+        <td class="stats-table__column">25 см</td>
+      </tr>
+      <tr class="stats-table__row">
+        <td class="stats-table__column">Высота:</td>
+        <td class="stats-table__column">25 см</td>
+      </tr>
+    </table>
+    <img src="/img/triple-set-mobile.png" alt="Вязаная корзинка" width="260" height="315">
+    <p class="gods-week__price">Цена: 990 руб.</p>
+    <button type="button" class="button">Заказать</button>
+  </section>
+
+  <section class="advantages">
+    <h2 class="advantages__title">Коротко о нас:</h2>
+    <ul class="advantages__list">
+      <li class="advantages__list__item advantages__list__item--first">
+        Экологически чистые материалы
+      </li>
+      <li class="advantages__list__item advantages__list__item--second">
+        Скандинавский стиль по российской цене
+      </li>
+      <li class="advantages__list__item advantages__list__item--third">
+        Увеличивает лайки на фотографиях
+      </li>
+      <li class="advantages__list__item advantages__list__item--fourth">
+        Связано вручную с любовью и умилением
+      </li>
+      <li class="advantages__list__item advantages__list__item--fifth">
+        Поддержка отечественного производителя
+      </li>
+      <li class="advantages__list__item advantages__list__item--sixth">
+        Поставляется в подарочной упаковке
+      </li>
+    </ul>
+  </section>
+
+  <section class="reviews-slider">
+      <p class="reviews-slider__review">
+        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+        инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+        стильными, а также набирают больше лайков!
+      </p>
+      <div class="reviews-slider__cite">
+        <cite class="reviews-slider__cite--name">Анастасия Красильникова</cite>
+        <cite class="reviews-slider__cite--nikname">@misssssiskras</cite>
+      </div>
+      <div class="reviews-slider__button-slider">
+        <button class="reviews-slider__button-slider__button--prev" type="button">Предыдущий</button>
+        <button class="reviews-slider__button-slider__button--next" type="button">Следующий</button>
+      </div>
+      <button type="reviews-slider__read-us">Написать</button>
+  </section>
 </main>
 
 <footer class="page-footer">
   <section class="contacts">
     <table class="contacts-table">
-      <tr class="contacts-table__line">
-        <td class="contacts-table__column color">e-mail:</td>
-        <td class="contacts-table__column color-description">info@mimimishkashop.ru
+      <tr class="contacts-table__row">
+        <td class="contacts-table__column">e-mail:</td>
+        <td class="contacts-table__column contacts-table__column--bottom-border">info@mimimishkashop.ru
         </td>
       </tr>
-      <tr class="contacts-table__line">
-        <td class="contacts-table__column diameter">адрес:</td>
-        <td class="contacts-table__column diameter-description">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
+      <tr class="contacts-table__row">
+        <td class="contacts-table__column">адрес:</td>
+        <td class="contacts-table__column">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
           офис 101
         </td>
       </tr>
@@ -100,16 +131,17 @@
     <div class="map">
       <img class="map__marker" src="#" width="67" height="100" alt="Маркер на карте">
     </div>
-    <button class="" type="button">Напишите нам</button>
+    <button class="button" type="button">Напишите нам</button>
   </section>
 
   <ul class="social-network">
-    <li class="social-network__item--instagram"><a href="#">Инстаграм</a></li>
-    <li class="social-network__item--facebook"><a href="#">Фейсбук</a></li>
-    <li class="social-network__item--twitter"><a href="#">Твиттер</a></li>
+    <li class="social-network__item social-network__item--instagram"><a href="#">Инстаграм</a></li>
+    <li class="social-network__item social-network__item--facebook"><a href="#">Фейсбук</a></li>
+    <li class="social-network__item social-network__item--twitter"><a href="#">Твиттер</a></li>
   </ul>
   <b class="copy-right"><a href="https://htmlacademy.ru">Разработанно</a></b>
 </footer>
+
 </body>
 
 </html>
