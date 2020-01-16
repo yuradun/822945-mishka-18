@@ -1,0 +1,25 @@
+@media (min-width: $mobile-width){
+  .reviews-slider{
+    padding-left: 29px;
+    padding-right: 35px;
+  }
+  .reviews-slider__title{
+    font-size: 25px;
+    padding-top: 61px;
+    padding-bottom: 38px;
+  }
+  .reviews-slider__text{
+    font-size: 15px;
+    color: $greyish-brown;
+  }
+  .reviews-slider__cite--name{
+    font-size: 17px;
+  }
+  .reviews-slider__cite--nickname{
+    font-size: 17px;
+    color: $greyish-brown;
+  }
+  .reviews-slider__button{
+    margin-bottom: 45px;
+  }
+}

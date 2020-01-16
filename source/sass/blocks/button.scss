@@ -1,0 +1,15 @@
+.button{
+  font-size: 17px;
+  text-transform: uppercase;
+  width: 259px;
+  height: 52px;
+  background-color: white;
+  border: solid 2px #444444;
+}
+.button:hover{
+  background-color: $greyish-brown;
+  color: #ffffff;
+}
+.button:active{
+  color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,111 @@
+@media (min-width: $mobile-width){
+  .sort-navigation{
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 55px;
+    padding-bottom: 70px;
+    }
+  .sort-navigation__list{
+    height: 206px;
+    width: 320px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    }
+  .sort-list__item{
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 19px;
+    }
+  .sort-list__item a{
+    color: white;
+    }
+  .sort-list__item--first{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-image: url("/img/interior-svg.png");
+    background-position: 244px;
+    background-repeat: no-repeat;
+    }
+  .sort-list__item--second{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-image: url("/img/toy-svg.png");
+    background-position: 234px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .sort-navigation{
+    margin: 0 auto;
+    padding: 0;
+    width: 119px;
+    width: 668px;
+    margin-top: 260px;
+  }
+  .sort-navigation__list{
+    width: 668px;
+    height: 119px;
+    display: flex;
+    flex: row;
+  }
+  .sort-list__item--first{
+    background-image: url("/img/interior-svg.png");
+    background-position: 258px;
+    background-repeat: no-repeat;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    width: 334px;
+  }
+  .sort-list__item--second{
+    background-image: url("/img/toy-svg.png");
+    background-position: 240px;
+    background-repeat: no-repeat;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 35px;
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .sort-navigation{
+    margin: 0 auto;
+    padding: 0;
+    width: 119px;
+    width: 1050px;
+    margin-top: 220px;
+  }
+  .sort-navigation__list{
+    width: 1050px;
+    display: flex;
+    flex: row;
+  }
+  .sort-list__item--first{
+    background-image: url("/img/interior-svg.png");
+    background-position: 449px;
+    width: 525px;
+  }
+  .sort-list__item--second{
+    background-image: url("/img/toy-svg.png");
+    background-position: 430px;
+    width: 525px;
+  }
+}
+
+.sort-list__item--first:active{
+  opacity: 0.3;
+}
+.sort-list__item--second:active{
+  opacity: 0.3;
+}
+.sort-list__bg-first{
+  background-color: $seafoam-blue;
+}
+.sort-list__bg-second{
+  background-color: $greeny-blue;
+}

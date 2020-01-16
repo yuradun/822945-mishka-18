@@ -1,0 +1,24 @@
+@media (min-width: $mobile-width){
+  .advantages{
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+  .advantages__title{
+    background-image: url("../img/zigzag-line-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 319px 6px;
+    padding-top: 36px;
+    font-size: 25px;
+    color: #000000;
+  }
+  .advantages__list{
+  }
+  .advantages__list--item{
+    font-size: 17px;
+    padding-top: 23px;
+    text-transform: uppercase;
+  }
+  .advantages__list--item img{
+    padding-bottom: 23px;
+  }
+}

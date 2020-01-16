@@ -1,0 +1,32 @@
+@media (min-width: $mobile-width){
+  .contacts{
+    background-image: url("../img/zigzag-line-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 320px 6px;
+    background-position: top;
+    padding-top: 33px;
+  }
+  .contacts__title{
+    padding-bottom: 42px;
+    font-size: 18px;
+  }
+  .contacts-table__column--first{
+    width: 78px;
+    font-size: 15px;
+    color: $greyish-brown;
+  }
+  .contacts-table__column--second{
+    font-size: 15px;
+  }
+  .contacts-table__row{
+    width: 178px;
+  }
+  .contacts-table__row--second{
+    height: 100px;
+  }
+  .contacts__button{
+    margin-left: 30px;
+    margin-top: 39px;
+    margin-bottom: 39px;
+  }
+}

@@ -1,0 +1,14 @@
+@media (min-width: $mobile-width){
+  .main-catalog{
+    width: 320px;
+    margin: 0 auto;
+  }
+  .main-catalog__title{
+    height: 111px;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-top: 76px;
+    font-size: 27px;
+    line-height: 30px;
+  }
+}
