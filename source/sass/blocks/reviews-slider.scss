@@ -12,10 +12,10 @@
     font-size: 15px;
     color: $greyish-brown;
   }
-  .reviews-slider__cite--name{
+  .reviews-slider__item:first-child{
     font-size: 17px;
   }
-  .reviews-slider__cite--nickname{
+  .reviews-slider__item:last-child{
     font-size: 17px;
     color: $greyish-brown;
   }

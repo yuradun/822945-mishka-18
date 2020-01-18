@@ -12,29 +12,50 @@
     margin: 0 auto;
     padding: 0;
     }
-  .sort-list__item{
+  .sort-list__item p:first-child{
     font-weight: bold;
     line-height: 24px;
     font-size: 19px;
+    width: 111px;
+    }
+  .sort-list__item p:last-child{
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 19px;
+    width: 94px;
     }
   .sort-list__item a{
     color: white;
     }
-  .sort-list__item--first{
+  .sort-list__item:first-child{
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
     background-image: url("/img/interior-svg.png");
     background-position: 244px;
     background-repeat: no-repeat;
+    background-color: $seafoam-blue;
     }
-  .sort-list__item--second{
+  .sort-list__item:last-child{
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
     background-image: url("/img/toy-svg.png");
     background-position: 234px;
     background-repeat: no-repeat;
+    background-color: #56c3b2;
+  }
+
+  //hover
+  .sort-list__item:first-child:hover{
+    background-color: #59d5bc;
+    }
+  .sort-list__item:last-child:hover{
+    background-color: #46c1ae;
+    }
+  //active
+  .sort-list__item p:active{
+    color: rgba(255, 255, 255, 0.2);
   }
 }
 

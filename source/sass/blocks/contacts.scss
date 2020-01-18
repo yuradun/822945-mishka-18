@@ -10,18 +10,15 @@
     padding-bottom: 42px;
     font-size: 18px;
   }
-  .contacts-table__column--first{
+  .contacts-table__column{
     width: 78px;
     font-size: 15px;
     color: $greyish-brown;
   }
-  .contacts-table__column--second{
-    font-size: 15px;
+  .contacts-table__column--boxshadow{
+    box-shadow: 0px 1px 0 0 $seafoam-blue;
   }
-  .contacts-table__row{
-    width: 178px;
-  }
-  .contacts-table__row--second{
+  .contacts-table__row:last-child{
     height: 100px;
   }
   .contacts__button{

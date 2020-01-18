@@ -5,26 +5,28 @@
     padding-bottom: 38px;
     padding-top: 32px;
   }
-  .buttons-slider--item{
+  .buttons-slider__item{
     width: 130px;
     height: 52px;
     background-color: white;
     border: solid 1px $borders;
   }
-  .buttons-slider--prev{
+  .buttons-slider__item--prev{
+    font-size: 0px;
     background-image: url("../img/huge-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
-  .buttons-slider--next{
+  .buttons-slider__item--next{
+    font-size: 0px;
     background-image: url("../img/huge-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
-.buttons-slider--item:hover{
+.buttons-slider__item:hover{
   opacity: 0.6;
 }
-.buttons-slider--item:active{
+.buttons-slider__item:active{
   opacity: 0.3;
 }
