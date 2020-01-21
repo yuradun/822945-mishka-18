@@ -26,10 +26,10 @@
         <li class="page-list__item">
           <a href="#">Вязание на заказ</a>
         </li>
-        <li class="page-list__item">
+        <li class="page-list__item page-list__item--cart">
           <a href="#">Поиск по сайту</a>
         </li>
-        <li class="page-list__item">
+        <li class="page-list__item page-list__item--basket">
           <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
@@ -45,12 +45,16 @@
       <ul class="sort-navigation__list sort-list">
         <li class="sort-list__item">
           <a href="#">
-            <p>Предметы интерьера</p>
+            <div>
+                <p>Предметы интерьера</p>
+            </div>
           </a>
         </li>
         <li class="sort-list__item">
           <a href="#">
-            <p>Детские игрушки</p>
+            <div>
+              <p>Детские игрушки</p>
+            </div>
           </a>
         </li>
       </ul>
@@ -123,12 +127,12 @@
           стильными, а также набирают больше лайков!
         </p>
         <div class="reviews-slider__cite">
-          <cite class="reviews-slider__item">Анастасия Красильникова</cite>
-          <cite class="reviews-slider__item">@misssssiskras</cite>
+          <cite class="reviews-slider__name">Анастасия Красильникова</cite>
+          <cite class="reviews-slider__nickname">@misssssiskras</cite>
         </div>
         <div class="buttons-slider">
-          <button class="buttons-slider__item buttons-slider__item--prev" type="button">Назад</button>
-          <button class="buttons-slider__item buttons-slider__item--next" type="button">Вперед</button>
+          <button class="buttons-slider--item buttons-slider--prev" type="button">Назад</button>
+          <button class="buttons-slider--item buttons-slider--next" type="button">Вперед</button>
         </div>
         <button type="button" class="reviews-slider__button button">Написать</button>
     </section>
@@ -140,10 +144,10 @@
     <table class="contacts-table">
       <tr class="contacts-table__row">
         <td class="contacts-table__column">e-mail:</td>
-        <td class="contacts-table__column contacts-table__column--boxshadow">info@mimimishkashop.ru
+        <td class="contacts-table__column contacts-table__column--boxline">info@mimimishkashop.ru
         </td>
       </tr>
-      <tr class="contacts-table__row">
+      <tr class="contacts-table__row contacts-table__row--second">
         <td class="contacts-table__column">адрес:</td>
         <td class="contacts-table__column">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
           офис 101

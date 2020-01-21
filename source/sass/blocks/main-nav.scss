@@ -27,14 +27,14 @@
     list-style: none;
     box-shadow: 0px 1px 0 0 $white-four,inset 0px 1px 0 0 $white-four;
   }
-  .page-list__item:nth-child(3){
-    background-image: url("../img/search-svg.svg");
+  .page-list__item--cart{
+    background-image: url("/img/search-svg.svg");
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: 32px;
   }
-  .page-list__item:nth-child(4){
-    background-image: url("../img/cart-svg.svg");
+  .page-list__item--basket{
+    background-image: url("/img/cart-svg.svg");
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: 32px;

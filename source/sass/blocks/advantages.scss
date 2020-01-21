@@ -1,49 +1,48 @@
-@media (min-width: $mobile-width){
-  .advantages{
+@media (min-width: 320px) {
+  .advantages {
     padding-top: 10px;
-    padding-left: 30px;
-  }
-  .advantages__title{
+    padding-left: 30px; }
+  .advantages__title {
     background-image: url("../img/zigzag-line-desktop.png");
     background-repeat: no-repeat;
     background-size: 319px 6px;
     padding-top: 36px;
     font-size: 25px;
-    color: #000000;
-  }
-  .advantages__list--item{
+    color: #000000; }
+  .advantages__list--item {
     font-size: 17px;
-    padding-top: 40px;
-    text-transform: uppercase;
-  }
-  .advantages__list--item:first-child{
+    padding-top: 50px;
+    text-transform: uppercase; }
+  .advantages__list--item:nth-child(1) {
     background-image: url("../img/icon-1-svg.png");
     background-repeat: no-repeat;
     background-position: 0px 5px;
-  }
-  .advantages__list--item:last-child{
-    background-image: url("../img/icon-6-svg.png");
-    background-repeat: no-repeat;
-    background-position: 0px 5px;
-  }
-  .advantages__list--item:nth-child(2){
+    }
+  .advantages__list--item:nth-child(2) {
     background-image: url("../img/icon-3-svg.png");
     background-repeat: no-repeat;
     background-position: 0px 5px;
   }
-  .advantages__list--item:nth-child(3){
+  .advantages__list--item:nth-child(3) {
     background-image: url("../img/icon-5-svg.png");
     background-repeat: no-repeat;
     background-position: 0px 5px;
   }
-  .advantages__list--item:nth-child(4){
+  .advantages__list--item:nth-child(4) {
     background-image: url("../img/icon-2-svg.png");
     background-repeat: no-repeat;
     background-position: 0px 5px;
   }
-  .advantages__list--item:nth-child(5){
+  .advantages__list--item:nth-child(5) {
     background-image: url("../img/icon-4-svg.png");
     background-repeat: no-repeat;
     background-position: 0px 5px;
   }
-}
+  .advantages__list--item:nth-child(6) {
+    background-image: url("../img/icon-6-svg.png");
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+  }
+
+
+  }
