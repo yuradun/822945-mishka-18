@@ -1,0 +1,32 @@
+@media (min-width: $mobile-width){
+  .social-network{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+  }
+  .social-network__item{
+    padding-right: 52px;
+    margin-top: 30px;
+    font-size: 0px;
+  }
+  .social-network__item--instagram{
+    background-image: url("../img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 21px;
+    padding-right: 62px;
+    margin-left: 87px;
+  }
+  .social-network__item--facebook{
+    background-image: url("../img/icon-fb.svg");
+    background-repeat: no-repeat;
+    background-size: 15px 28px;
+    padding-top: none;
+    margin-top: 25px;
+  }
+  .social-network__item--twitter{
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-size: 23px 20px;
+  }
+}

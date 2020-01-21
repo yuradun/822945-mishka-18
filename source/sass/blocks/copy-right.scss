@@ -1,0 +1,18 @@
+@media (min-width: $mobile-width){
+  .copy-right{
+    width: 250px;
+    font-size: 19px;
+    padding-top: 30px;
+    padding-bottom: 31px;
+    padding-left: 70px;
+    font-size: 19px;
+
+    background-color: #f1f1f1;
+    background-image: url("../img/htmlacademy-svg.svg");
+    background-repeat: no-repeat;
+    background-size: 27px 34px;
+    background-position: 220px;
+
+    box-shadow: 0px 1px 0 0 $white-four,inset 0px 1px 0 0 $white-four;
+  }
+}

@@ -1,0 +1,33 @@
+@media (min-width: $mobile-width){
+  .buttons-slider{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 38px;
+    padding-top: 32px;
+  }
+  .buttons-slider--item{
+    width: 130px;
+    height: 52px;
+    background-color: white;
+    border: solid 1px $borders;
+  }
+  .buttons-slider--prev{
+    background-image: url("../img/huge-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0px;
+  }
+  .buttons-slider--next{
+    background-image: url("../img/huge-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0px;
+  }
+}
+.buttons-slider--item:hover{
+  opacity: 0.6;
+
+}
+.buttons-slider--item:active{
+  opacity: 0.3;
+}

@@ -10,22 +10,26 @@
 <body>
 <header class="page-header">
   <a class="page-header__logo">
-    <img class="page-header__logo-image" width="86" height="35" alt="Логотип Мишка">
+    <picture class="page-header__logo-image">
+      <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop-svg.svg">
+      <source media="(min-width: 772px)" srcset="img/logo-tablet.svg">
+      <img src="img/mishka-logo-mobile.svg" alt="Логотип Мишка">
+    </picture>
   </a>
   <nav class="main-nav">
     <button type="button" class="main-nav__toggle"><span class="visually-hidden">Меню</span></button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list page-list">
-        <li class="page-list__item">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
           <a href="#">Каталог товаров</a>
         </li>
-        <li class="page-list__item">
+        <li class="main-nav__item">
           <a href="#">Вязание на заказ</a>
         </li>
-        <li class="page-list__item page-list__item--img1">
+        <li class="main-nav__item main-nav__item--search">
           <a href="#">Поиск по сайту</a>
         </li>
-        <li class="page-list__item page-list__item--img2">
+        <li class="main-nav__item main-nav__item--basket">
           <a href="#">Корзина: пока пуста</a>
         </li>
       </ul>
@@ -39,89 +43,111 @@
     </span>
     <div class="sort-navigation">
       <ul class="sort-navigation__list sort-list">
-        <li class="sort-list__item sort-list__item--first">
-            <a href="#" >Предметы<br>интерьера</a>
+        <li class="sort-list__item">
+          <a href="#">
+            <div>
+                <p>Предметы интерьера</p>
+            </div>
+          </a>
         </li>
-        <li class="sort-list__item sort-list__item--second">
-            <a href="#">Детские<br>игрушки</a>
+        <li class="sort-list__item">
+          <a href="#">
+            <div>
+              <p>Детские игрушки</p>
+            </div>
+          </a>
         </li>
       </ul>
     </div>
 
-  <section class="gods-week">
-    <h2 class="gods-week__heading">Вязаные корзинки</h2>
-    <b class="gods-week__additionally">Товар недели</b>
-    <p class="gods-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-    <table class="stats-table">
-      <tr class="stats-table__row">
-        <td class="stats-table__column">Цвет:</td>
-        <td class="stats-table__column">«Тиффани»/серый</td>
-      </tr>
-      <tr class="stats-table__row">
-        <td class="stats-table__column">Диаметр:</td>
-        <td class="stats-table__column">25 см</td>
-      </tr>
-      <tr class="stats-table__row">
-        <td class="stats-table__column">Высота:</td>
-        <td class="stats-table__column">25 см</td>
-      </tr>
-    </table>
-    <img src="/img/triple-set-mobile.png" alt="Вязаная корзинка" width="260" height="315">
-    <p class="gods-week__price">Цена: 990 руб.</p>
-    <button type="button" class="button">Заказать</button>
-  </section>
+    <section class="gods-week">
+      <h2 class="gods-week__heading">Вязаные корзинки</h2>
+      <b class="gods-week__additionally">Товар недели</b>
+      <p class="gods-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+      <table class="gods-week__table">
+        <tr class="gods-week__table__row">
+          <td class="gods-week__table__column">
+            <p>Цвет:</p>
+          </td>
+          <td class="gods-week__table__column">
+            <p>«Тиффани»/серый</p>
+          </td>
+        </tr>
+        <tr class="gods-week__table__row">
+          <td class="gods-week__table__column">
+            <p>Диаметр:</p>
+          </td class="gods-week__table__column">
+          <td class="gods-week__table__column">
+            <p>25см</p>
+          </td>
+        </tr>
+        <tr class="gods-week__table__row">
+          <td class="gods-week__table__column">
+            <p>Высота:</p>
+          </td>
+          <td class="gods-week__table__column">
+            <p>15см</p>
+          </td>
+        </tr>
+      </table>
+      <img src="/img/triple-set-mobile.png" alt="Вязаная корзинка" width="260" height="315">
+      <p class="gods-week__price">Цена: 990 руб.</p>
+      <button type="button" class="button">Заказать</button>
+    </section>
 
-  <section class="advantages">
-    <h2 class="advantages__title">Коротко о нас:</h2>
-    <ul class="advantages__list">
-      <li class="advantages__list__item advantages__list__item--first">
-        Экологически чистые материалы
-      </li>
-      <li class="advantages__list__item advantages__list__item--second">
-        Скандинавский стиль по российской цене
-      </li>
-      <li class="advantages__list__item advantages__list__item--third">
-        Увеличивает лайки на фотографиях
-      </li>
-      <li class="advantages__list__item advantages__list__item--fourth">
-        Связано вручную с любовью и умилением
-      </li>
-      <li class="advantages__list__item advantages__list__item--fifth">
-        Поддержка отечественного производителя
-      </li>
-      <li class="advantages__list__item advantages__list__item--sixth">
-        Поставляется в подарочной упаковке
-      </li>
-    </ul>
-  </section>
+    <section class="advantages">
+      <h2 class="advantages__title">Коротко о нас:</h2>
+      <ul class="advantages__list">
+        <li class="advantages__list--item">
+          <p>Экологически чистые материалы</p>
+        </li>
+        <li class="advantages__list--item">
+          <p>Скандинавский стиль по российской цене</p>
+        </li>
+        <li class="advantages__list--item">
+          <p>Увеличивает лайки на фотографиях</p>
+        </li>
+        <li class="advantages__list--item">
+          <p>Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="advantages__list--item">
+          <p>Поддержка отечественного производителя</p>
+        </li>
+        <li class="advantages__list--item">
+          <p>Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
+    </section>
 
-  <section class="reviews-slider">
-      <p class="reviews-slider__review">
-        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-        инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-        стильными, а также набирают больше лайков!
-      </p>
-      <div class="reviews-slider__cite">
-        <cite class="reviews-slider__cite--name">Анастасия Красильникова</cite>
-        <cite class="reviews-slider__cite--nikname">@misssssiskras</cite>
-      </div>
-      <div class="reviews-slider__button-slider">
-        <button class="reviews-slider__button-slider__button--prev" type="button">Предыдущий</button>
-        <button class="reviews-slider__button-slider__button--next" type="button">Следующий</button>
-      </div>
-      <button type="reviews-slider__read-us">Написать</button>
-  </section>
+    <section class="reviews-slider">
+        <h2 class="reviews-slider__title">Отзывы</h2>
+        <p class="reviews-slider__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+          инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+          стильными, а также набирают больше лайков!
+        </p>
+        <div class="reviews-slider__cite">
+          <cite class="reviews-slider__name">Анастасия Красильникова</cite>
+          <cite class="reviews-slider__nickname">@misssssiskras</cite>
+        </div>
+        <div class="buttons-slider">
+          <button class="buttons-slider--item buttons-slider--prev" type="button">Назад</button>
+          <button class="buttons-slider--item buttons-slider--next" type="button">Вперед</button>
+        </div>
+        <button type="button" class="reviews-slider__button button">Написать</button>
+    </section>
 </main>
 
 <footer class="page-footer">
   <section class="contacts">
+    <h2 class="contacts__title">Контакты</h2>
     <table class="contacts-table">
       <tr class="contacts-table__row">
         <td class="contacts-table__column">e-mail:</td>
-        <td class="contacts-table__column contacts-table__column--bottom-border">info@mimimishkashop.ru
+        <td class="contacts-table__column contacts-table__column--boxline">info@mimimishkashop.ru
         </td>
       </tr>
-      <tr class="contacts-table__row">
+      <tr class="contacts-table__row contacts-table__row--second">
         <td class="contacts-table__column">адрес:</td>
         <td class="contacts-table__column">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
           офис 101
@@ -129,17 +155,19 @@
       </tr>
     </table>
     <div class="map">
-      <img class="map__marker" src="#" width="67" height="100" alt="Маркер на карте">
     </div>
-    <button class="button" type="button">Напишите нам</button>
+    <button class="contacts__button button" type="button">Напишите нам</button>
   </section>
 
   <ul class="social-network">
-    <li class="social-network__item social-network__item--instagram"><a href="#">Инстаграм</a></li>
-    <li class="social-network__item social-network__item--facebook"><a href="#">Фейсбук</a></li>
-    <li class="social-network__item social-network__item--twitter"><a href="#">Твиттер</a></li>
+    <li class="social-network__item social-network__item--instagram">Инстаграм<a href="#"></a></li>
+    <li class="social-network__item social-network__item--facebook">Фейсбук<a href="#"></a></li>
+    <li class="social-network__item social-network__item--twitter">Твиттер<a href="#"></a></li>
   </ul>
-  <b class="copy-right"><a href="https://htmlacademy.ru">Разработанно</a></b>
+  <div class="copy-right">
+    <b class="copy-right__item"><a href="https://htmlacademy.ru">Разработанно</a></b>
+  </div>
+
 </footer>
 
 </body>

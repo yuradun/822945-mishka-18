@@ -1,0 +1,12 @@
+@media (min-width: $mobile-width){
+  .map{
+    width: 322px;
+    height: 457px;
+    background-image: url("../img/map-mobile@1x.jpg");
+    background-repeat: no-repeat;
+  }
+  .map__marker{
+    padding-left: 139px;
+    padding-top: 145px;
+  }
+}
