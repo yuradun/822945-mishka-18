@@ -1,0 +1,35 @@
+@media (min-width: $mobile-width){
+  .video-block{
+    width: 260px;
+    padding-top: 29px;
+    padding-bottom: 26px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 0 0 $white-four,inset 1px 1px 0 0 $white-four;
+    margin-bottom: 58px;
+  }
+  .video-block__title{
+    width: 124px;
+    font-size: 17px;
+    font-weight: 24px;
+    font-family: "OpenSans-bold";
+    padding-left: 91px;
+
+    background-image: url("/img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 45px;
+  }
+  .video-block__video{
+
+  }
+  .video-block__description{
+    margin: 0 auto;
+    padding-left: 34px;
+    padding-right: 43px;
+    padding-top: 34px;
+    padding-bottom: 29px;
+    width: 183px;
+    color: $greyish-brown;
+    font-size: 13px;
+    font-weight: 24px;
+  }
+}

@@ -19,18 +19,18 @@
   <nav class="main-nav">
     <button type="button" class="main-nav__toggle"><span class="visually-hidden">Меню</span></button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list page-list">
-        <li class="page-list__item">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
           <a href="#">Каталог товаров</a>
         </li>
-        <li class="page-list__item">
+        <li class="main-nav__item">
           <a href="#">Вязание на заказ</a>
         </li>
-        <li class="page-list__item page-list__item--cart">
-          <a href="#">Поиск по сайту</a>
+        <li class="main-nav__item main-nav__item--search">
+          <a href="form.html">Поиск по сайту</a>
         </li>
-        <li class="page-list__item page-list__item--basket">
-          <a href="#">Корзина: пока пуста</a>
+        <li class="main-nav__item main-nav__item--basket">
+          <a href="catalog.html">Корзина: пока пуста</a>
         </li>
       </ul>
     </div>
@@ -46,61 +46,98 @@
     </p>
     <section class="form-block__radio">
       <h2>Тип</h2>
-      <ul>
-        <li>
-          <input id="radio-first" type="radio" name="radio" checked />
-          <label for="radio-first">Аксессуар для интерьера</label>
-        </li>
-        <li>
-          <input id="radio-second" type="radio" name="radio" />
-          <label for="radio-second">Детская игрушка</label>
-        </li>
-      </ul>
+      <form class="form-block__radio__form" action="index.html" method="post">
+        <ul>
+          <li>
+            <input id="radio-first" type="radio" name="radio" checked />
+            <label for="radio-first">Аксессуар для интерьера</label>
+          </li>
+          <li>
+            <input id="radio-second" type="radio" name="radio" />
+            <label for="radio-second">Детская игрушка</label>
+          </li>
+        </ul>
+      </form>
     </section>
     <section class="form-block__checkbox">
       <h2>Цвет</h2>
-      <ul>
-        <li>
-          <input id="check-first" type="checkbox" name="checkbox" checked />
-          <label for="check-first">Белый</label>
-        </li>
-        <li>
-          <input id="check-second" type="checkbox" name="checkbox" checked />
-          <label for="check-second">Серый</label>
-        </li>
-        <li>
-          <input id="check-third" type="checkbox" name="checkbox"  />
-          <label for="check-third">«Тиффани»</label>
-        </li>
-        <li>
-          <input id="check-fourth" type="checkbox" name="checkbox" />
-          <label for="check-fourth">Черный</label>
-        </li>
-        <li>
-          <input id="check-fifth" type="checkbox" name="checkbox" />
-          <label for="check-five">Розовый</label>
-        </li>
-        <li>
-          <input id="check-sixth" type="checkbox" name="checkbox" />
-          <label for="check-sixth">Оранжевый</label>
-        </li>
-      </ul>
+      <form class="form-block__checkbox__form" action="index.html" method="post">
+        <ul>
+          <li>
+            <input id="check-first" type="checkbox" name="checkbox" checked />
+            <label for="check-first">Белый</label>
+          </li>
+          <li>
+            <input id="check-second" type="checkbox" name="checkbox" checked />
+            <label for="check-second">Серый</label>
+          </li>
+          <li>
+            <input id="check-third" type="checkbox" name="checkbox"  />
+            <label for="check-third">«Тиффани»</label>
+          </li>
+          <li>
+            <input id="check-fourth" type="checkbox" name="checkbox" />
+            <label for="check-fourth">Черный</label>
+          </li>
+          <li>
+            <input id="check-fifth" type="checkbox" name="checkbox" />
+            <label for="check-five">Розовый</label>
+          </li>
+          <li>
+            <input id="check-sixth" type="checkbox" name="checkbox" />
+            <label for="check-sixth">Оранжевый</label>
+          </li>
+        </ul>
+      </form>
     </section>
-    <section class="form-block__">
+    <section class="form-block__personal-info">
       <h2>ФИО</h2>
-      <ul>
-        <li>
-          <form class="" action="index.html" method="post">
-
-          </form>
-        </li>
-        <li>
-          <input id="radio-second" type="radio" name="radio" />
-          <label for="radio-second">Детская игрушка</label>
-        </li>
-      </ul>
+      <form class="form-block__personal-info__form" action="index.html" method="post">
+        <ul>
+          <li>
+            <label for="name">Имя:</label>
+            <input id="name" type="text" name="text" />
+          </li>
+          <li>
+            <label for="sername">Фамилия:</label>
+            <input id="sername" type="text" name="text" />
+          </li>
+          <li>
+            <label for="second-name">Отчество:</label>
+            <input id="second-name" type="text" name="text" />
+          </li>
+        </ul>
+      </form>
+    </section>
+    <section class="form-block__contacts">
+      <form class="form-block__contacts__form" action="index.html" method="post">
+        <ul>
+          <li>
+            <label for="number">тел</label>
+            <input id="number" type="number" name="number" />
+          </li>
+          <li>
+            <label for="email">e-mail</label>
+            <input id="email" type="email" name="email" />
+          </li>
+          <li>
+            <label for="extra">доп</label>
+            <input id="extra" type="text" name="text" />
+          </li>
+        </ul>
+      </form>
+      <p>*Поля обязательны для заполнения</p>
+      <button type="button" class="button">Отправить заказ</button>
     </section>
   </section>
+  <ul class="social-network">
+    <li class="social-network__item social-network__item--instagram">Инстаграм<a href="#"></a></li>
+    <li class="social-network__item social-network__item--facebook">Фейсбук<a href="#"></a></li>
+    <li class="social-network__item social-network__item--twitter">Твиттер<a href="#"></a></li>
+  </ul>
+  <div class="copy-right">
+    <b class="copy-right__item"><a href="https://htmlacademy.ru">Разработанно</a></b>
+  </div>
 </main>
 </body>
 </html>
