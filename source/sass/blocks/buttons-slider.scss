@@ -15,15 +15,18 @@
     background-image: url("../img/huge-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 0px;
   }
   .buttons-slider--next{
     background-image: url("../img/huge-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 0px;
   }
 }
 .buttons-slider--item:hover{
   opacity: 0.6;
+
 }
 .buttons-slider--item:active{
   opacity: 0.3;
